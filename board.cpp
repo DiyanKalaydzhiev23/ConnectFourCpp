@@ -1,5 +1,6 @@
 #include "board.h"
 #include <iostream>
+#include <iomanip>
 
 
 // GROUP 1
@@ -42,3 +43,39 @@
     3. Create a function to check for a win
         - Win is when a player has 4 consecutive pins by row, column or diagonal.
 */
+
+using namespace std;
+
+const int ROWS = 6;
+const  int COLS = 7;
+
+void initializeBoard(std::vector<std::vector<char>>& board) {
+   board.resize(ROWS, std::vector<char>(COLS, ' '));
+};
+
+void printBoard(const std::vector<std::vector<char>>& board) {
+
+
+for (const auto& row : board) {
+   cout << "             ";
+    for (const auto& element : row) {
+        cout << " | " << element << " ";
+    }
+    cout << "\n";
+}
+
+    cout << "               ";
+    for (int i = 1; i <= 7; i++) {
+        if (i == 1)
+            cout << " " << i << " ";
+
+        else
+        cout << "   " << i << " ";
+    }
+
+cout << "\n";
+
+}
+
+
+

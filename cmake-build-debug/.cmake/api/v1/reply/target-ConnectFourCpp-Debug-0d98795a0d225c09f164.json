@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ConnectFourCpp"
+			"path" : "ConnectFourCpp.exe"
+		},
+		{
+			"path" : "ConnectFourCpp.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -42,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics"
+					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/diyan/CLionProjects/ConnectFourCpp/."
+					"path" : "C:/Users/User/board_game/ConnectFourCpp/."
 				}
 			],
 			"language" : "CXX",
@@ -81,12 +84,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "ConnectFourCpp",
-	"nameOnDisk" : "ConnectFourCpp",
+	"nameOnDisk" : "ConnectFourCpp.exe",
 	"paths" : 
 	{
 		"build" : ".",
